@@ -142,7 +142,7 @@ public class MainActivity extends AppCompatActivity {
         String fullPrompt = DOCTOR_PROMPT + question;
 
 
-        GenerativeModel gm = new GenerativeModel("gemini-pro", "AIzaSyB_FxH6ZxpTN2k3oHC2aSFqS3wwaeOAXz4");
+        GenerativeModel gm = new GenerativeModel("gemini-pro", "input your gemini api key here");
         GenerativeModelFutures model = GenerativeModelFutures.from(gm);
         Content content = new Content.Builder()
                 .addText(fullPrompt)
